@@ -20,7 +20,7 @@ Use the icons in your project with this markup:
 <span class="icr icr-class"></span>
 ```
 
-In this example **class** is a placeholder for the icon you want to use. Visit our icon site to see all avaible icons and their class names.
+In this example **class** is a placeholder for the icon you want to use. Visit our icon site to see all available icons and their class names.
 
 ## Copyright and License
 
