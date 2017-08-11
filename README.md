@@ -1,3 +1,5 @@
+[Banner](src/images/banner.jpg)
+
 # iconcepts Round
 
 Icon web font with rounded icons.
@@ -21,6 +23,8 @@ Use the icons in your project with this markup:
 ```
 
 In this example **class** is a placeholder for the icon you want to use. Visit our icon site to see all available icons and their class names.
+
+[Icons](src/images/icons.jpg)
 
 ## Copyright and License
 
