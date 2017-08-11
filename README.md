@@ -19,13 +19,15 @@ Add the compiled and minified CSS to the header of your HTML document.
 Use the icons in your project with this markup:
 
 ```
-<span class="icr icr-class"></span>
+<span class="icr icr-name"></span>
 ```
 
-In this example **class** is a placeholder for the icon you want to use. Visit our icon site to see all available icons and their class names.
+In this example **name** is a placeholder for the icon you want to use. Visit our icon site (coming soon) to see all available icons and their class names.
 
 ![Icons](src/images/icons.jpg)
 
 ## Copyright and License
 
 Copyright [designconcepts GmbH](https://www.designconcepts.de/) under the [MIT license](LICENSE.md).
+
+![designconcepts GmbH](src/images/designconcepts.png)
