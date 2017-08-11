@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'iconceptsRound';
+	src: url('#{$irc-font-path}/iconcepts-round.eot?#{$irc-version}');
+	src: url('#{$irc-font-path}/iconcepts-round.eot?#{$irc-version}#iefix') format('embedded-opentype'),
+		 url('#{$irc-font-path}/iconcepts-round.ttf?#{$irc-version}') format('truetype'),
+		 url('#{$irc-font-path}/iconcepts-round.woff?#{$irc-version}') format('woff'),
+		 url('#{$irc-font-path}/iconcepts-round.svg?#{$irc-version}#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

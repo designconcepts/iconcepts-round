@@ -1,2 +1,3 @@
-# iconcepts-round
-Icon Font by designconcepts GmbH.
+# iconcepts Round
+
+Icon web font by designconcepts GmbH.
