@@ -9,8 +9,8 @@ Icon web font with rounded icons.
 You have the following options to get **iconcepts Round**:
 
 * Download the [latest release](https://github.com/designconcepts/iconcepts-round/releases/latest).
-* Install with [Yarn](https://yarnpkg.com/): ```yarn add iconcepts-round``
-* Install with [npm](https://www.npmjs.com/): ```npm install iconcepts-round``
+* Install with [Yarn](https://yarnpkg.com/): ```yarn add iconcepts-round```
+* Install with [npm](https://www.npmjs.com/): ```npm install iconcepts-round```
 
 ## How to use
 
