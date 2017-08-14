@@ -1,11 +1,16 @@
 {
   "name": "iconcepts-round",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Icon web font with rounded icons.",
   "main": "index.js",
   "repository": "https://github.com/designconcepts/iconcepts-round.git",
   "bugs": "https://github.com/designconcepts/iconcepts-round/issues",
   "author": "designconcepts GmbH <info@designconcepts.de>",
-  "keywords": ["icon", "web", "font", "round"],
+  "keywords": [
+    "icon",
+    "web",
+    "font",
+    "round"
+  ],
   "license": "MIT"
 }
