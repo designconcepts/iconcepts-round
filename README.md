@@ -9,8 +9,8 @@ Icon web font with rounded icons.
 You have the following options to get **iconcepts Round**:
 
 * Download the [latest release](https://github.com/designconcepts/iconcepts-round/releases/latest).
-* Install with [Yarn](https://yarnpkg.com/): ```yarn add iconcepts-round```
-* Install with [npm](https://www.npmjs.com/): ```npm install iconcepts-round```
+* Install with [Yarn](https://yarnpkg.com/en/docs/getting-started): ```yarn add iconcepts-round```
+* Install with [npm](https://docs.npmjs.com/getting-started/what-is-npm): ```npm install iconcepts-round```
 
 ## How to use
 
@@ -23,10 +23,10 @@ Add the compiled and minified CSS to the header of your HTML document.
 Use the icons in your project with this markup:
 
 ```
-<span class="icr icr-name"></span>
+<i class="icr icr-name"></i>
 ```
 
-In this example **name** is a placeholder for the icon you want to use. Visit our icon site (coming soon) to see all available icons and their class names.
+In this example **name** is a placeholder for the icon you want to use. Visit our [icon site](https://designconcepts.github.io/iconcepts-round/) to see all available icons and their class names.
 
 ![Icons](src/images/icons.jpg)
 
