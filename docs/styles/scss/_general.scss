@@ -1,0 +1,317 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: $background;
+	background-size: 200% 200%;
+	animation: gradient 20s ease infinite;
+	color: $color;
+	font-family: $font-family;
+	font-size: 25px;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Selection
+::selection {
+	background: $color;
+	color: $brand-secondary;
+}
+
+::-moz-selection {
+	background: $color;
+	color: $brand-secondary;
+}
+
+// Gradient
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+// Invert
+.invert {
+	background: linear-gradient(to right, $brand-primary, $brand-secondary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: $link-hover-color;
+	filter: invert(100%);
+}
+
+// Gerneral
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font-family;
+	font-weight: 400;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+button,
+.button {
+	display: block;
+	border: 1px solid $border-color;
+	border-radius: 25px;
+	max-width: 280px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	@include easeInOut(border-color, background, color, filter);
+
+	&:hover,
+	&:focus {
+		border-color: $link-hover-color;
+		@extend .invert;
+	}
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 25px;
+}
+
+#header {
+
+	#logo {
+		display: flex;
+		align-items: center;
+		margin: 0 0 50px;
+
+		svg {
+
+		}
+
+		h1 {
+			display: inline-block;
+			margin: 0;
+			padding-left: 10px;
+			font-size: 1rem
+		}
+	}
+}
+
+#main {
+
+	#icons {
+		overflow: hidden;
+		max-width: $breakpoint-xlarge;
+		width: 100%;
+
+		.icon {
+			position: relative;
+			cursor: pointer;
+			display: block;
+			float: left;
+			position: relative;
+			margin-bottom: 25px;
+			width: 10%;
+			padding-bottom: 36px;
+			text-align: center;
+
+			@media (max-width: $breakpoint-large-max) {
+				padding-bottom: 2vw;
+			}
+
+			@media (max-width: $breakpoint-medium-max) {
+				width: 12.5%;
+				padding-bottom: 2.5vw;
+			}
+
+			@media (max-width: $breakpoint-small-max) {
+				width: 20%;
+				padding-bottom: 4vw;
+			}
+
+			@media (max-width: $breakpoint-xsmall-max) {
+				width: 33%;
+				padding-bottom: 6.6vw;
+			}
+
+			@media (max-width: $breakpoint-tiny-max) {
+				width: 50%;
+				padding-bottom: 10vw;
+			}
+
+			&:hover,
+			&.active {
+
+				.icr,
+				.name {
+					@extend .invert;
+				}
+
+				.name {
+					opacity: 1;
+				}
+			}
+
+			.icr {
+				font-size: 4rem;
+				@include easeInOut(background, color, filter);
+
+				@media (max-width: $breakpoint-large-max) {
+					font-size: 5vw;
+				}
+
+				@media (max-width: $breakpoint-medium-max) {
+					font-size: 6.25vw;
+				}
+
+				@media (max-width: $breakpoint-small-max) {
+					font-size: 10vw;
+				}
+
+				@media (max-width: $breakpoint-xsmall-max) {
+					font-size: 16.5vw;
+				}
+
+				@media (max-width: $breakpoint-tiny-max) {
+					font-size: 25vw;
+				}
+			}
+
+			.name {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 0.75rem;
+				line-height: 1.25;
+				opacity: 0;
+				@include easeInOut(background, color);
+
+				@media (max-width: $breakpoint-large-max) {
+					font-size: 1vw;
+				}
+
+				@media (max-width: $breakpoint-medium-max) {
+					font-size: 1.25vw;
+				}
+
+				@media (max-width: $breakpoint-small-max) {
+					font-size: 2vw;
+				}
+
+				@media (max-width: $breakpoint-xsmall-max) {
+					font-size: 3.3vw;
+				}
+
+				@media (max-width: $breakpoint-tiny-max) {
+					font-size: 5vw;
+				}
+			}
+		}
+	}
+
+	.button {
+		margin: 50px auto;
+	}
+}
+
+#footer {
+	width: 100%;
+
+	#copyright {
+		float: right;
+
+		@media (max-width: $breakpoint-xsmall-max) {
+			display: block;
+			float: inherit;
+		}
+
+		svg  {
+			display: block;
+			margin: 0 auto;
+			width: auto;
+			height: 25px;
+			opacity: 0.25;
+			@include easeInOut(opacity, filter);
+
+			path {
+				@include easeInOut(fill);
+			}
+		}
+
+		&:hover,
+		&:focus {
+
+			svg {
+				opacity: 1;
+				filter: invert(100%);
+
+				path {
+					fill: $link-hover-color;
+				}
+			}
+		}
+	}
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(black, 0.75);
+
+	.close-modal {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		font-size: 2rem;
+		z-index: 1;
+		@include easeInOut(background, color, filter);
+	}
+
+	.icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		padding-bottom: 50px;
+		text-align: center;
+
+		.icr {
+			font-size: 16rem;
+			@include easeInOut(background, color, filter);
+
+			@media (max-width: $breakpoint-large-max) {
+				font-size: 33vw;
+			}
+		}
+
+		.name {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			line-height: 1.25;
+		}
+	}
+}

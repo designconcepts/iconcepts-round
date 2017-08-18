@@ -1,0 +1,306 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  background: linear-gradient(45deg, #63f18a, #2b98d1);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 20s ease infinite;
+          animation: gradient 20s ease infinite;
+  color: white;
+  font-family: "LinotypeSyntaxW01-Regul", sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+::-moz-selection {
+  background: white;
+  color: #2b98d1; }
+
+::selection {
+  background: white;
+  color: #2b98d1; }
+
+::-moz-selection {
+  background: white;
+  color: #2b98d1; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.invert, button:hover, button:focus,
+.button:hover,
+.button:focus, #main #icons .icon:hover .icr,
+#main #icons .icon:hover .name, #main #icons .icon.active .icr,
+#main #icons .icon.active .name {
+  background: -webkit-gradient(linear, left top, right top, from(#63f18a), to(#2b98d1));
+  background: linear-gradient(to right, #63f18a, #2b98d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #14da4a;
+  -webkit-filter: invert(100%);
+          filter: invert(100%); }
+
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "LinotypeSyntaxW01-Bold", sans-serif;
+  font-weight: 400; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+button,
+.button {
+  display: block;
+  border: 1px solid white;
+  border-radius: 25px;
+  max-width: 280px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-property: border-color, background, color, -webkit-filter;
+  transition-property: border-color, background, color, -webkit-filter;
+  transition-property: border-color, background, color, filter;
+  transition-property: border-color, background, color, filter, -webkit-filter;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out; }
+  button:hover, button:focus,
+  .button:hover,
+  .button:focus {
+    border-color: #14da4a; }
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 25px; }
+
+#header #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 50px; }
+  #header #logo h1 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1rem; }
+
+#main #icons {
+  overflow: hidden;
+  max-width: 1600px;
+  width: 100%; }
+  #main #icons .icon {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    float: left;
+    position: relative;
+    margin-bottom: 25px;
+    width: 10%;
+    padding-bottom: 36px;
+    text-align: center; }
+    @media (max-width: 1599px) {
+      #main #icons .icon {
+        padding-bottom: 2vw; } }
+    @media (max-width: 1199px) {
+      #main #icons .icon {
+        width: 12.5%;
+        padding-bottom: 2.5vw; } }
+    @media (max-width: 959px) {
+      #main #icons .icon {
+        width: 20%;
+        padding-bottom: 4vw; } }
+    @media (max-width: 639px) {
+      #main #icons .icon {
+        width: 33%;
+        padding-bottom: 6.6vw; } }
+    @media (max-width: 359px) {
+      #main #icons .icon {
+        width: 50%;
+        padding-bottom: 10vw; } }
+    #main #icons .icon:hover .name, #main #icons .icon.active .name {
+      opacity: 1; }
+    #main #icons .icon .icr {
+      font-size: 4rem;
+      -webkit-transition-property: background, color, -webkit-filter;
+      transition-property: background, color, -webkit-filter;
+      transition-property: background, color, filter;
+      transition-property: background, color, filter, -webkit-filter;
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out; }
+      @media (max-width: 1599px) {
+        #main #icons .icon .icr {
+          font-size: 5vw; } }
+      @media (max-width: 1199px) {
+        #main #icons .icon .icr {
+          font-size: 6.25vw; } }
+      @media (max-width: 959px) {
+        #main #icons .icon .icr {
+          font-size: 10vw; } }
+      @media (max-width: 639px) {
+        #main #icons .icon .icr {
+          font-size: 16.5vw; } }
+      @media (max-width: 359px) {
+        #main #icons .icon .icr {
+          font-size: 25vw; } }
+    #main #icons .icon .name {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-size: 0.75rem;
+      line-height: 1.25;
+      opacity: 0;
+      -webkit-transition-property: background, color;
+      transition-property: background, color;
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out; }
+      @media (max-width: 1599px) {
+        #main #icons .icon .name {
+          font-size: 1vw; } }
+      @media (max-width: 1199px) {
+        #main #icons .icon .name {
+          font-size: 1.25vw; } }
+      @media (max-width: 959px) {
+        #main #icons .icon .name {
+          font-size: 2vw; } }
+      @media (max-width: 639px) {
+        #main #icons .icon .name {
+          font-size: 3.3vw; } }
+      @media (max-width: 359px) {
+        #main #icons .icon .name {
+          font-size: 5vw; } }
+
+#main .button {
+  margin: 50px auto; }
+
+#footer {
+  width: 100%; }
+  #footer #copyright {
+    float: right; }
+    @media (max-width: 639px) {
+      #footer #copyright {
+        display: block;
+        float: inherit; } }
+    #footer #copyright svg {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: 25px;
+      opacity: 0.25;
+      -webkit-transition-property: opacity, -webkit-filter;
+      transition-property: opacity, -webkit-filter;
+      transition-property: opacity, filter;
+      transition-property: opacity, filter, -webkit-filter;
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out; }
+      #footer #copyright svg path {
+        -webkit-transition-property: fill;
+        transition-property: fill;
+        -webkit-transition-duration: 0.25s;
+                transition-duration: 0.25s;
+        -webkit-transition-timing-function: ease-in-out;
+                transition-timing-function: ease-in-out; }
+    #footer #copyright:hover svg, #footer #copyright:focus svg {
+      opacity: 1;
+      -webkit-filter: invert(100%);
+              filter: invert(100%); }
+      #footer #copyright:hover svg path, #footer #copyright:focus svg path {
+        fill: #14da4a; }
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75); }
+  #modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    z-index: 1;
+    -webkit-transition-property: background, color, -webkit-filter;
+    transition-property: background, color, -webkit-filter;
+    transition-property: background, color, filter;
+    transition-property: background, color, filter, -webkit-filter;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; }
+  #modal .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center; }
+    #modal .icon .icr {
+      font-size: 16rem;
+      -webkit-transition-property: background, color, -webkit-filter;
+      transition-property: background, color, -webkit-filter;
+      transition-property: background, color, filter;
+      transition-property: background, color, filter, -webkit-filter;
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out; }
+      @media (max-width: 1599px) {
+        #modal .icon .icr {
+          font-size: 33vw; } }
+    #modal .icon .name {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      line-height: 1.25; }
+/*# sourceMappingURL=global.css.map */

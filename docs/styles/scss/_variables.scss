@@ -1,0 +1,29 @@
+// Breakpoints
+$breakpoint-tiny:								360px;  // Phone Portrai
+$breakpoint-small:								640px;  // Phone landscape
+$breakpoint-medium:								960px;  // Tablet Landscape
+$breakpoint-large:								1200px; // Desktop
+$breakpoint-xlarge:								1600px; // Large Screens
+
+$breakpoint-tiny-max:							($breakpoint-tiny - 1);
+$breakpoint-xsmall-max:							($breakpoint-small - 1);
+$breakpoint-small-max:							($breakpoint-medium - 1);
+$breakpoint-medium-max:							($breakpoint-large - 1);
+$breakpoint-large-max:							($breakpoint-xlarge - 1);
+
+// Colors
+$brand-primary:									#63f18a;
+$brand-secondary:								#2b98d1;
+
+$color:											white;
+
+$link-color:									white;
+$link-hover-color:								darken($brand-primary, 20%);
+
+$border-color:									white;
+
+$background:									linear-gradient(45deg, $brand-primary, $brand-secondary);
+
+// Fonts
+$font-family:									"LinotypeSyntaxW01-Regul", sans-serif;
+$heading-font-family:							"LinotypeSyntaxW01-Bold", sans-serif;
