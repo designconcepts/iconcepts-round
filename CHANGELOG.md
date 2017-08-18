@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1 (August 18, 2017)
+## 1.0.5 (August 18, 2017)
 
 * Added documentation.
 * Changed recommended usage from ```<span class="icr icr-name"></span>``` to ```<i class="icr icr-name"></i>```.
