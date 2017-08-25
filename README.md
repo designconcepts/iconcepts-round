@@ -11,6 +11,7 @@ You have the following options to get **iconcepts Round**:
 * Download the [latest release](https://github.com/designconcepts/iconcepts-round/releases/latest).
 * Install with [Yarn](https://yarnpkg.com/en/docs/getting-started): ```yarn add iconcepts-round```
 * Install with [npm](https://docs.npmjs.com/getting-started/what-is-npm): ```npm install iconcepts-round```
+* Install with [Bower](https://bower.io/): ```bower install iconcepts-round```
 
 ## How to use
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6 (August 25, 2017)
+
+Added Bower as install option.
+
 ## 1.0.5 (August 18, 2017)
 
 * Added documentation.
