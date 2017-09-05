@@ -49,11 +49,13 @@ html {
 #main #icons .icon.active .name {
   background: -webkit-gradient(linear, left top, right top, from(#63f18a), to(#2b98d1));
   background: linear-gradient(to right, #63f18a, #2b98d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: #14da4a;
   -webkit-filter: invert(100%);
-          filter: invert(100%); }
+          filter: invert(100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
 
 body {
   margin: 0; }

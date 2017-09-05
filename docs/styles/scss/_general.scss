@@ -42,10 +42,14 @@ html {
 // Invert
 .invert {
 	background: linear-gradient(to right, $brand-primary, $brand-secondary);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	color: $link-hover-color;
 	filter: invert(100%);
+
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
 }
 
 // Gerneral
