@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7 (September 15, 2017)
+
+Added homepage to package.json.
+
 ## 1.0.6 (August 25, 2017)
 
 Added Bower as install option.
