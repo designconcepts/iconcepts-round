@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8 (July 27, 2018)
+
+Fixed typo with icon *reverse*.
+
 ## 1.0.7 (September 15, 2017)
 
 Added homepage to package.json.

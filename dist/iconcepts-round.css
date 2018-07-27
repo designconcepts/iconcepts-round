@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconceptsRound';
-  src: url("../fonts/iconcepts-round.eot?1.0.7");
-  src: url("../fonts/iconcepts-round.eot?1.0.7#iefix") format("embedded-opentype"), url("../fonts/iconcepts-round.ttf?1.0.7") format("truetype"), url("../fonts/iconcepts-round.woff?1.0.7") format("woff"), url("../fonts/iconcepts-round.svg?1.0.7#icomoon") format("svg");
+  src: url("../fonts/iconcepts-round.eot?1.0.8");
+  src: url("../fonts/iconcepts-round.eot?1.0.8#iefix") format("embedded-opentype"), url("../fonts/iconcepts-round.ttf?1.0.8") format("truetype"), url("../fonts/iconcepts-round.woff?1.0.8") format("woff"), url("../fonts/iconcepts-round.svg?1.0.8#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -175,7 +175,7 @@
 .icr-reservation:before {
   content: "\e934"; }
 
-.icr-revers:before {
+.icr-reverse:before {
   content: "\e935"; }
 
 .icr-rollback:before {
